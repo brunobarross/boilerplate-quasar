@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p>{{ title }}</p>
+    <p class="text-2xl">{{ title }}</p>
     <ul>
       <li v-for="todo in todos" :key="todo.id" @click="increment">
         {{ todo.id }} - {{ todo.content }}
@@ -21,10 +21,10 @@ interface Props {
   todos?: Todo[];
   meta: Meta;
   active: boolean;
-};
+}
 
 const props = withDefaults(defineProps<Props>(), {
-  todos: () => []
+  todos: () => [],
 });
 
 const clickCount = ref(0);
