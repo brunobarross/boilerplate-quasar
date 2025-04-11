@@ -18,6 +18,7 @@
   },
   "browserslist": "> 0.5%, not dead",
   "dependencies": {
+    "@display-studio/vue-player": "^0.0.6",
     "@quasar/extras": "^1.16.4",
     "axios": "^1.2.1",
     "caniuse-lite": "^1.0.30001707",
